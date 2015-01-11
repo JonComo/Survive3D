@@ -7,13 +7,15 @@
 //
 
 #import "SRWorld.h"
+#import "SRWorld.h"
+#import "SRObject.h"
 
 @import SpriteKit;
 
 @interface SRWorld ()
 
 @property (nonatomic, strong) SCNNode *cameraNode;
-
+@property (nonatomic, strong) SRObject *player;
 
 @end
 
@@ -41,6 +43,12 @@
         lightNode.position = SCNVector3Make(0, 10, 10);
         [self.rootNode addChildNode:lightNode];
         
+        SKTexture *tex = [SKTexture textureWithImageNamed:@"tile"];
+        tex.filteringMode = SKTextureFilteringNearest;
+        
+        _player = [[SRObject alloc] initWithTexture:tex];
+        [self.rootNode addChildNode:_player];
+        
         [self makeGround];
     }
     
@@ -54,8 +62,8 @@
             tex.filteringMode = SKTextureFilteringNearest;
             
             
-            SCNNode *planeNode = [SCNNode nodeWithGeometry:[SCNPlane planeWithWidth:2 height:2]];
-            planeNode.position = SCNVector3Make(x * 2, 0, z * 2);
+            SCNNode *planeNode = [SCNNode nodeWithGeometry:[SCNPlane planeWithWidth:SRObjectSize height:SRObjectSize]];
+            planeNode.position = SCNVector3Make(x * SRObjectSize, 0, z * SRObjectSize);
             planeNode.rotation = SCNVector4Make(1, 0, 0, -M_PI_2);
             planeNode.geometry.firstMaterial.diffuse.contents = tex;
             [self.rootNode addChildNode:planeNode];

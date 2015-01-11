@@ -20,6 +20,7 @@
 		8693E2441A630B4900A1AF2C /* SRInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8693E2431A630B4900A1AF2C /* SRInterface.m */; };
 		8693E2471A630D3F00A1AF2C /* JCMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8693E2461A630D3F00A1AF2C /* JCMath.m */; };
 		8693E2491A630EAE00A1AF2C /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = 8693E2481A630EAE00A1AF2C /* water.png */; };
+		8693E24C1A6324CA00A1AF2C /* SRObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8693E24B1A6324CA00A1AF2C /* SRObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		8693E2451A630D3F00A1AF2C /* JCMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCMath.h; path = ../../../../Dropbox/Development/JCMath.h; sourceTree = "<group>"; };
 		8693E2461A630D3F00A1AF2C /* JCMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCMath.m; path = ../../../../Dropbox/Development/JCMath.m; sourceTree = "<group>"; };
 		8693E2481A630EAE00A1AF2C /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water.png; sourceTree = "<group>"; };
+		8693E24A1A6324CA00A1AF2C /* SRObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRObject.h; sourceTree = "<group>"; };
+		8693E24B1A6324CA00A1AF2C /* SRObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				8693E2231A6302BC00A1AF2C /* Images.xcassets */,
 				8693E2251A6302BC00A1AF2C /* LaunchScreen.xib */,
 				8693E2141A6302BC00A1AF2C /* Supporting Files */,
+				8693E24A1A6324CA00A1AF2C /* SRObject.h */,
+				8693E24B1A6324CA00A1AF2C /* SRObject.m */,
 			);
 			path = Survive3D;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				8693E21F1A6302BC00A1AF2C /* GameViewController.m in Sources */,
 				8693E2441A630B4900A1AF2C /* SRInterface.m in Sources */,
 				8693E2171A6302BC00A1AF2C /* main.m in Sources */,
+				8693E24C1A6324CA00A1AF2C /* SRObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
