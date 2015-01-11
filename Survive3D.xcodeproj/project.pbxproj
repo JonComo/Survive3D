@@ -15,6 +15,11 @@
 		8693E2241A6302BC00A1AF2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8693E2231A6302BC00A1AF2C /* Images.xcassets */; };
 		8693E2271A6302BC00A1AF2C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8693E2251A6302BC00A1AF2C /* LaunchScreen.xib */; };
 		8693E2331A6302BC00A1AF2C /* Survive3DTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8693E2321A6302BC00A1AF2C /* Survive3DTests.m */; };
+		8693E23E1A6303E600A1AF2C /* SRWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 8693E23D1A6303E600A1AF2C /* SRWorld.m */; };
+		8693E2411A63073D00A1AF2C /* tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 8693E2401A63073D00A1AF2C /* tile.png */; };
+		8693E2441A630B4900A1AF2C /* SRInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8693E2431A630B4900A1AF2C /* SRInterface.m */; };
+		8693E2471A630D3F00A1AF2C /* JCMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8693E2461A630D3F00A1AF2C /* JCMath.m */; };
+		8693E2491A630EAE00A1AF2C /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = 8693E2481A630EAE00A1AF2C /* water.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,14 @@
 		8693E22C1A6302BC00A1AF2C /* Survive3DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Survive3DTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8693E2311A6302BC00A1AF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8693E2321A6302BC00A1AF2C /* Survive3DTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Survive3DTests.m; sourceTree = "<group>"; };
+		8693E23C1A6303E600A1AF2C /* SRWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWorld.h; sourceTree = "<group>"; };
+		8693E23D1A6303E600A1AF2C /* SRWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWorld.m; sourceTree = "<group>"; };
+		8693E2401A63073D00A1AF2C /* tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile.png; sourceTree = "<group>"; };
+		8693E2421A630B4900A1AF2C /* SRInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRInterface.h; sourceTree = "<group>"; };
+		8693E2431A630B4900A1AF2C /* SRInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRInterface.m; sourceTree = "<group>"; };
+		8693E2451A630D3F00A1AF2C /* JCMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCMath.h; path = ../../../../Dropbox/Development/JCMath.h; sourceTree = "<group>"; };
+		8693E2461A630D3F00A1AF2C /* JCMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCMath.m; path = ../../../../Dropbox/Development/JCMath.m; sourceTree = "<group>"; };
+		8693E2481A630EAE00A1AF2C /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +96,16 @@
 		8693E2131A6302BC00A1AF2C /* Survive3D */ = {
 			isa = PBXGroup;
 			children = (
+				8693E23F1A63073D00A1AF2C /* media */,
 				8693E2181A6302BC00A1AF2C /* AppDelegate.h */,
 				8693E2191A6302BC00A1AF2C /* AppDelegate.m */,
 				8693E21B1A6302BC00A1AF2C /* art.scnassets */,
 				8693E21D1A6302BC00A1AF2C /* GameViewController.h */,
 				8693E21E1A6302BC00A1AF2C /* GameViewController.m */,
+				8693E23C1A6303E600A1AF2C /* SRWorld.h */,
+				8693E23D1A6303E600A1AF2C /* SRWorld.m */,
+				8693E2421A630B4900A1AF2C /* SRInterface.h */,
+				8693E2431A630B4900A1AF2C /* SRInterface.m */,
 				8693E2201A6302BC00A1AF2C /* Main.storyboard */,
 				8693E2231A6302BC00A1AF2C /* Images.xcassets */,
 				8693E2251A6302BC00A1AF2C /* LaunchScreen.xib */,
@@ -99,6 +117,8 @@
 		8693E2141A6302BC00A1AF2C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8693E2451A630D3F00A1AF2C /* JCMath.h */,
+				8693E2461A630D3F00A1AF2C /* JCMath.m */,
 				8693E2151A6302BC00A1AF2C /* Info.plist */,
 				8693E2161A6302BC00A1AF2C /* main.m */,
 			);
@@ -120,6 +140,15 @@
 				8693E2311A6302BC00A1AF2C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8693E23F1A63073D00A1AF2C /* media */ = {
+			isa = PBXGroup;
+			children = (
+				8693E2481A630EAE00A1AF2C /* water.png */,
+				8693E2401A63073D00A1AF2C /* tile.png */,
+			);
+			path = media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8693E2271A6302BC00A1AF2C /* LaunchScreen.xib in Resources */,
+				8693E2411A63073D00A1AF2C /* tile.png in Resources */,
 				8693E2241A6302BC00A1AF2C /* Images.xcassets in Resources */,
 				8693E21C1A6302BC00A1AF2C /* art.scnassets in Resources */,
 				8693E2221A6302BC00A1AF2C /* Main.storyboard in Resources */,
+				8693E2491A630EAE00A1AF2C /* water.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8693E21A1A6302BC00A1AF2C /* AppDelegate.m in Sources */,
+				8693E23E1A6303E600A1AF2C /* SRWorld.m in Sources */,
+				8693E2471A630D3F00A1AF2C /* JCMath.m in Sources */,
 				8693E21F1A6302BC00A1AF2C /* GameViewController.m in Sources */,
+				8693E2441A630B4900A1AF2C /* SRInterface.m in Sources */,
 				8693E2171A6302BC00A1AF2C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +450,7 @@
 				8693E2381A6302BC00A1AF2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8693E2391A6302BC00A1AF2C /* Build configuration list for PBXNativeTarget "Survive3DTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +459,7 @@
 				8693E23B1A6302BC00A1AF2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
